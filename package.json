@@ -1,0 +1,25 @@
+{
+  "name": "node-tuto",
+  "version": "1.0.0",
+  "description": "NodeJS Tuto",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --setupFiles dotenv/config",
+    "preinstall": "node bin/copy-past-env"
+  },
+  "author": "Samba",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "fastify": "^3.17.0",
+    "fastify-cors": "^6.0.1",
+    "fastify-jwt": "^3.0.0",
+    "fastify-plugin": "^3.0.0",
+    "fastify-swagger": "^4.7.0",
+    "jest": "^27.0.4",
+    "mongodb": "^3.6.9",
+    "nodemon": "^2.0.7"
+  }
+}
